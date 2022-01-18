@@ -1,0 +1,129 @@
+:host ::ng-deep .logo {
+    height: 50px;
+    margin: 20px;
+    margin-bottom: 10px;
+    background-image: url('/assets/img/logo-white.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  :host ::ng-deep nz-page-header {
+    padding: 0px 24px;
+  }
+  
+  
+  :host ::ng-deep .ant-page-header-back-button {
+    position: relative;
+    left: 3px;
+  }
+  
+  :host ::ng-deep .ant-layout-sider-zero-width-trigger {
+    z-index: 20;
+    margin-right: 14px;
+    width: 22px;
+  }
+  
+  
+  div.menu-tooltip {
+    font-weight: 500;
+    color: #777;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    padding: 0px 10px;
+    position: fixed;
+    z-index: 100;
+    display: none;
+    margin-left: 54px;
+    margin-top: -44px;
+  }
+  
+  
+  .ant-menu-inline-collapsed li.ant-menu-item:hover div.menu-tooltip {
+    display: block;
+  }
+  
+  li.ant-menu-item:hover,
+  li.ant-menu-submenu:hover {
+    background-color: #024;
+  }
+  
+  .ant-menu-inline-collapsed li.ant-menu-item i,
+  .ant-menu-inline-collapsed li.ant-menu-submenu ::ng-deep i {
+    font-size: 26px;
+    margin-left: -6px;
+    position: absolute;
+    top: 6px;
+    line-height: 24px;
+  }
+  
+  li.ant-menu-item-danger a {
+    color: #ddd;
+  }
+  
+  li.ant-menu-item-danger a:hover {
+    color: #fff;
+  }
+  
+  
+  
+  .menu-sidebar {
+    position: relative;
+    z-index: 10;
+    min-height: 100vh;
+    box-shadow: 2px 0 6px rgba(0,21,41,.35);
+  }
+  
+  .header-trigger {
+    height: 64px;
+    padding: 20px 24px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .3s,padding 0s;
+  }
+  
+  
+  
+  .sidebar-logo {
+    position: relative;
+    height: 64px;
+    padding-left: 24px;
+    overflow: hidden;
+    line-height: 64px;
+    background: #001529;
+    transition: all .3s;
+  }
+  
+  .sidebar-logo img {
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    vertical-align: middle;
+  }
+  
+  .sidebar-logo h1 {
+    display: inline-block;
+    margin: 0 0 0 20px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: Avenir,Helvetica Neue,Arial,Helvetica,sans-serif;
+    vertical-align: middle;
+  }
+  
+  
+  
+  
+  nz-content {
+    margin: 24px;
+    background: white;
+  
+  }
+  
+  .inner-content {
+    padding: 24px;
+    background: #fff;
+    height: 100%;
+  }
+  

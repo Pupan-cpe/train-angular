@@ -1,0 +1,42 @@
+<nz-layout style="height: 100vh">
+    <nz-sider
+      nzCollapsible
+      [(nzCollapsed)]="menuCollapsed"
+      [nzCollapsedWidth]="windowInnerWidth >= 1024 ? 80 : 0"
+    >
+      <ul
+        nz-menu
+        nzTheme="dark"
+        nzMode="vertical"
+        [nzInlineCollapsed]="menuCollapsed"
+      >
+        <li
+          *ngIf="!menuCollapsed"
+          style="
+            margin-top: 30px;
+            margin-left: 40px;
+            margin-bottom: 40px;
+            align-content: center;
+          "
+        >
+          <span>Test</span>
+        </li>
+            <li
+              nz-menu-item
+              nzMatchRouter="true"
+            >
+              <a [routerLink]="['/welcome']">
+                <i nz-icon nzType="environment" nzTheme="outline"></i>
+                <span class="nav-text">welcome </span>
+              </a>
+              <div class="menu-tooltip">welcome</div>
+            </li>
+          </ul>
+    </nz-sider>
+    <nz-content>
+      <div class="inner-content">
+        <router-outlet></router-outlet>
+      </div>
+    </nz-content>
+  </nz-layout>
+  
