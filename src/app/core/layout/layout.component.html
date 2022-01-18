@@ -31,6 +31,19 @@
               </a>
               <div class="menu-tooltip">welcome</div>
             </li>
+
+            <li
+            nz-menu-item
+            nzMatchRouter="true"
+          >
+            <a [routerLink]="['/test-api']">
+              <i nz-icon nzType="api" nzTheme="outline"></i>
+              <span class="nav-text">Call API </span>
+            </a>
+            <div class="menu-tooltip">Call API</div>
+          </li>
+
+
           </ul>
     </nz-sider>
     <nz-content>
