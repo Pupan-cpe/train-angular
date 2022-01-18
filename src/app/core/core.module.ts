@@ -33,7 +33,7 @@ registerLocaleData(en);
     NzMenuModule,
     NzIconModule, //?เพิ่มเข้ามาใหม่
     RouterModule, //?เพิ่มเข้ามาใหม่
-    CommonModule
+    CommonModule,
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
 })
