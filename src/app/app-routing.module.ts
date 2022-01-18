@@ -10,6 +10,14 @@ const routes: Routes = [
     loadChildren: () =>
       import('./pages/welcome/welcome.module').then((m) => m.WelcomeModule),
   },
+
+  {
+    path: 'test-api',
+    component: LayoutComponent, //? เพิ่มเข้ามาใหม่
+    loadChildren: () =>
+      import('./pages/test-api/test-api.module').then((m) => m.TestApiModule),
+  },
+
 ];
 
 @NgModule({
